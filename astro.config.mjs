@@ -3,8 +3,7 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://wildflowai.github.io",
-  base: "/docs",
+  site: "https://docs.wildflow.ai",
 
   integrations: [
     starlight({

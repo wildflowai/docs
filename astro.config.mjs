@@ -10,7 +10,7 @@ export default defineConfig({
     starlight({
       title: "wildflow docs 🐳",
       social: {
-        github: "https://github.com/withastro/starlight",
+        github: "https://github.com/wildflowai/platform",
       },
       sidebar: [
         { label: "Overview", link: "/overview" },

@@ -17,7 +17,11 @@ In today's landscape, biodiversity researchers must not only excel in understand
 
 ## Our solution
 
-Our platform, based on an [open-source](https://github.com/wildflowai) ([MIT licence](https://en.wikipedia.org/wiki/MIT_License)) and primarily open data model, aims to streamline this process. This ensures full transparency, enabling users to review, adapt, and even deploy these tools independently if desired. By offering cloud-based distributed workflows tailored for MPA creation and maintenance, we help nonprofits iterate faster with governments, reducing the time and resources spent on data analysis. By transforming various data types into time-series geospatial biodiversity data, we provide a unified, accessible model for swift decision-making.
+Our platform aims to streamline this process. By offering cloud-based distributed workflows tailored for MPA creation and maintenance, we help nonprofits iterate faster with governments, reducing the time and resources spent on data analysis.
+
+By transforming various data types into time-series geospatial biodiversity data, we provide a unified, accessible model for swift decision-making.
+
+Our platform based on an [open-source](https://github.com/wildflowai) ([MIT licence](https://en.wikipedia.org/wiki/MIT_License)) and primarily open data model. This ensures full transparency, enabling users to review, adapt, and even deploy these tools independently if desired.
 
 ## A partnership approach
 

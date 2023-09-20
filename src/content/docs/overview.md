@@ -43,12 +43,12 @@ We provide quality control tools and a visualization layer to streamline analysi
 
 Our platform supports various applications, including:
 
-- creation of marine protected areas (MPAs),
+- [creation of marine protected areas (MPAs)](/applications/marine-protected-areas),
 - impact assessment of offshore wind farms,
 - pet food fish procurement,
 - invasive species opportunities,
 - seaweed farm monitoring,
-- coral bleaching prediction,
+- [coral bleaching events prediction](/applications/coral-bleaching),
 - monitoring, reporting and verification (MRV) for biodiversity,
 - biodiversity credits, and
 - harmful algae bloom forecasts.

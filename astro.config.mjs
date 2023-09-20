@@ -14,6 +14,10 @@ export default defineConfig({
       sidebar: [
         { label: "Overview", link: "/overview" },
         {
+          label: "Applications",
+          autogenerate: { directory: "applications" },
+        },
+        {
           label: "Reference",
           autogenerate: { directory: "reference" },
         },

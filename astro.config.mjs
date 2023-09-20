@@ -34,6 +34,10 @@ export default defineConfig({
               label: "Offshore Wind Farms",
               link: "/applications/wind-farms",
             },
+            {
+              label: "Biodiversity Credits",
+              link: "/applications/biodiversity-credits",
+            },
           ],
         },
         {

@@ -44,14 +44,14 @@ We provide quality control tools and a visualization layer to streamline analysi
 Our platform supports various applications, including:
 
 - [creation of marine protected areas (MPAs)](/applications/marine-protected-areas),
-- impact assessment of offshore wind farms,
+- [impact assessment of offshore wind farms](/applications/wind-farms),
 - pet food fish procurement,
 - invasive species opportunities,
 - seaweed farm monitoring,
 - [coral bleaching events prediction](/applications/coral-bleaching),
 - monitoring, reporting and verification (MRV) for biodiversity,
-- biodiversity credits, and
-- harmful algae bloom forecasts.
+- [biodiversity credits](/applications/biodiversity-credits), and
+- [harmful algae bloom forecasts](/applications/algae-blooms).
 
 Now also is a good time to leverage LLMs for enhanced biodiversity studies 😉
 

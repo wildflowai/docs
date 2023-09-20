@@ -15,11 +15,11 @@ In the face of pressing environmental challenges, sustainable solutions are beco
 
 **Biodiversity credits**: Now, as biodiversity loss comes to the forefront, there's a need for a similar, yet more refined system. Biodiversity credits (see the [OpWall](https://www.opwall.com/biodiversity-credits) example) are emerging as an answer. Instead of offsetting damage, which often doesn't result in genuine restoration or conservation, the goal is to encourage meaningful enhancement of biodiversity. Opwall's concept is akin to the _Retail Price Index (RPI)_, where a _'basket of metrics'_ determines biodiversity progression.
 
-## Problem
+## The problem
 
 Creating a robust and meaningful system for biodiversity credits requires centralized and standardized metrics. Yet, the challenge remains: how can diverse and vast data be consistently measured, updated, and made accessible?
 
-## Our Solution
+## Our solution
 
 **wildflow** specializes in gathering time-series geospatial biodiversity data from diverse sources including eDNA, bioacoustics, remote sensing, manual observations, and computer vision.
 

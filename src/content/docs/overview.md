@@ -15,8 +15,6 @@ Empower biodiversity researchers with modern AI infrastructure!
 
 In today's landscape, biodiversity researchers must not only excel in understanding nature and addressing the biodiversity crisis, but they also need to master big data management. This includes building data pipelines, aggregating data from various sources, cleaning data, handling extensive big data operations and deploying novel models for multi-model data formats.
 
-### Overview
-
 ![wildflow](../../assets/wildflow.svg)
 
 We offer an open platform that specializes in **time series geospatial biodiversity data**, enabling in-depth study of marine **population dynamics** and providing essential **building blocks** to work on marine **biodiversity** applications.

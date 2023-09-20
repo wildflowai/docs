@@ -7,7 +7,7 @@ description: Utilizing multi-modal biodiversity data to comprehensively evaluate
 To offer a holistic view of the environmental implications of offshore wind farms, emphasizing marine biodiversity, through robust multi-modal biodiversity data.
 :::
 
-## Problem
+## The problem
 
 Offshore wind farms, while a promising source of clean energy, have potential effects on marine ecosystems. Their construction and operation can potentially affect marine ecosystems, bird migratory routes, alter underwater soundscapes, lead to habitat distructions and the broader biodiversity implications. Understanding these impacts is paramount to ensure sustainable energy development without compromising marine biodiversity.
 

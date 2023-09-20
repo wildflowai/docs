@@ -9,7 +9,7 @@ Harnessing multi-source time-series biodiversity data to predict and mitigate th
 To utilize comprehensive population dynamics and environmental data to anticipate harmful algae blooms, thereby aiding in timely interventions.
 :::
 
-## Problem
+## The problem
 
 Harmful Algae Blooms (HABs) have a significant impact on marine ecosystems, human health, and coastal economies. They produce toxins which can poison marine life, cause respiratory irritations in humans, and lead to economic losses in fisheries and tourism. Predicting these blooms is crucial to manage their threats efficiently.
 

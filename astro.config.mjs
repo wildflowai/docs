@@ -23,8 +23,16 @@ export default defineConfig({
               link: "/applications/marine-protected-areas",
             },
             {
-              label: "Predict Coral Bleaching Events",
+              label: "Coral Bleaching Events",
               link: "/applications/coral-bleaching",
+            },
+            {
+              label: "Harmful Algae Blooms",
+              link: "/applications/algae-blooms",
+            },
+            {
+              label: "Offshore Wind Farms",
+              link: "/applications/wind-farms",
             },
           ],
         },

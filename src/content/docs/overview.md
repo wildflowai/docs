@@ -1,5 +1,5 @@
 ---
-title: wildflow 🌎🐳
+title: wildflow
 description: wildflow is an open marine biodiversity data platform aiming to protect oceans by accelerating research and conservation.
 ---
 

@@ -7,7 +7,7 @@ export default defineConfig({
 
   integrations: [
     starlight({
-      title: "wildflow 🐳",
+      title: "wildflow docs",
       social: {
         github: "https://github.com/wildflowai/platform",
       },

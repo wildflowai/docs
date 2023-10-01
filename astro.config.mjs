@@ -11,6 +11,16 @@ export default defineConfig({
       social: {
         github: "https://github.com/wildflowai/platform",
       },
+      head: [
+        {
+          tag: "script",
+          attrs: {
+            src: "https://scripts.simpleanalyticscdn.com/latest.js",
+            async: true,
+            defer: true,
+          },
+        },
+      ],
       sidebar: [
         { label: "Overview", link: "/overview" },
         {

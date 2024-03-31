@@ -1,0 +1,6 @@
+---
+title: Overview
+description: Overview
+---
+
+**Model biosphere**. Our mission is to enable a **comprehensive understanding** of nature and **align human activities** with it, starting with **oceans**. We’re building a **digital nervous system** of the planet connecting **sensors** **measuring the biosphere** (eDNA, bioacoustics, computer vision, remote sensing, manual observations, etc) to **actions** (where to create marine protected areas, where to restore oyster reefs, where to install offshore wind farms, etc). At its core is a **brain** deeply **understanding** **nature**, how **we impact nature**, and how **nature impacts us**. It can forecast coral bleaching events, predict harmful algae blooms, estimate aquaculture crop yield, and more. It’s a **collection of AI models**, from simple statistical models to multi-modal **foundation models for biodiversity**, that we are pioneering. It comes as **one cloud for biodiversity**, an **open data** platform with **open-source tools** for data analysis and management, eliminating data wrestling for ecologists. By democratising access to AI models, biodiversity data and tools, we **accelerate** **biodiversity** **research** and conservation and **align industrial activities** with **transparent mechanisms**.

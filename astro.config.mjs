@@ -24,6 +24,41 @@ export default defineConfig({
       sidebar: [
         { label: "Overview", link: "/overview" },
         {
+          label: "Vision",
+          // Not using autogenerate to keep custom order.
+          // autogenerate: { directory: "applications" },
+          items: [
+            {
+              label: "Overview",
+              link: "/vision/overview",
+            },
+            {
+              label: "Importance of Oceans",
+              link: "/vision/oceans",
+            },
+            {
+              label: "Vision and Mission",
+              link: "/vision/scifi",
+            },
+            {
+              label: "What will change?",
+              link: "/vision/impact",
+            },
+            {
+              label: "Path there!",
+              link: "/vision/path",
+            },
+            {
+              label: "Problems",
+              link: "/vision/problems",
+            },
+            {
+              label: "Solution",
+              link: "/vision/solution",
+            },
+          ],
+        },
+        {
           label: "Applications",
           // Not using autogenerate to keep custom order.
           // autogenerate: { directory: "applications" },

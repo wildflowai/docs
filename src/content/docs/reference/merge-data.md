@@ -31,13 +31,13 @@ Make sure you uploaded your observational data file to [Wildflow](https://wildfl
 
 ![upload-your-csv-file](../../../assets/merge-data/upload-your-csv-file.png)
 
-Please specify the file name and make sure all the columns have correct names. File name should start with `.raw` for now (it's a name of the dataset/collection of tables in BigQuery).
+Please specify the file name and make sure all the columns have correct names. File name should start with `raw.` for now (it's a name of the dataset/collection of tables in BigQuery).
 
 ![update-column-names](../../../assets/merge-data/update-column-names.png)
 
 Proceed to upload your table.
 
-### 2. Make sure env data is available as well.
+### 2. Enable environmental data
 
 If you need your dataset available in **wildflow**, please contact us via [WhatsApp](http://whatsapp.wildflow.ai) or [Discord](http://discord.wildflow.ai).
 

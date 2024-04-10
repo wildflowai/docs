@@ -75,10 +75,12 @@ Now you should be able to see the SQL code generated to join these tables:
 Feel free to save it for future experiment reproducibility.
 You can run this in the Google BigQuery console.
 
-### 4. Merge
+### 5. Merge
 
 When you continue the query will be executed:
 ![job-status](../../../assets/merge-data/job-status.png)
+
+You can see most recent jobs here: [Jobs](https://wildflow-demo.web.app/jobs).
 
 And it should finish with a few minutes:
 
@@ -88,7 +90,7 @@ Now you should be able to see a new table with merged observational and environm
 
 Yay! 🐳
 
-### 5. Advanced Users
+### 6. Advanced Users
 
 If you have a timestamp format that is not supported by BigQuery (`06/05/18 10:14` but you need `2018-05-06 10:14`), you can run this adhoc query to create `raw.test_table` from `gs://bucket-name/uploaded/Table_2024-04-10T16:59:21.145Z.csv`.
 

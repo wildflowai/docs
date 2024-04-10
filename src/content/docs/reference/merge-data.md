@@ -6,7 +6,7 @@ description: Merge Data
 This tutorial shows how to merge your observational with envirounmental data!
 
 :::caution[Note]
-This feature is in closed beta, please ask access via [WhatsApp](https://discord.wildflow.ai) or [Discord](https://discord.wildflow.ai).
+This feature is in closed beta, please ask access via [WhatsApp](http://whatsapp.wildflow.ai) or [Discord](http://discord.wildflow.ai).
 :::
 
 ### Intro
@@ -39,7 +39,7 @@ Proceed to upload your table.
 
 ### 2. Make sure env data is available as well.
 
-If you need your dataset available in **wildflow**, please contact us via [WhatsApp](https://discord.wildflow.ai) or [Discord](https://discord.wildflow.ai).
+If you need your dataset available in **wildflow**, please contact us via [WhatsApp](http://whatsapp.wildflow.ai) or [Discord](http://discord.wildflow.ai).
 
 Please provide us the name of the dataset, e.g.: https://data.marine.copernicus.eu/product/OCEANCOLOUR_GLO_BGC_L4_MY_009_104
 

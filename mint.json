@@ -19,12 +19,6 @@
     "name": "Support",
     "url": "https://wildflow.ai/whatsapp"
   },
-  "tabs": [
-    {
-      "name": "Tutorials",
-      "url": "tutorials"
-    }
-  ],
   "anchors": [
     {
       "name": "GitHub",
@@ -48,6 +42,10 @@
       "pages": ["welcome", "overview"]
     },
     {
+      "group": "Tutorials",
+      "pages": ["tutorials/merge-data", "tutorials/sharktrack"]
+    },
+    {
       "group": "Applications",
       "pages": [
         "applications/marine-protected-areas",
@@ -56,10 +54,6 @@
         "applications/algae-blooms",
         "applications/biodiversity-credits"
       ]
-    },
-    {
-      "group": "Tutorials",
-      "pages": ["tutorials/merge-data"]
     }
   ],
   "footerSocials": {

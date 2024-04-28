@@ -1,0 +1,72 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Docs",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#4051c2",
+    "light": "#6572c7",
+    "dark": "#2c46db",
+    "anchors": {
+      "from": "#2c46db",
+      "to": "#6572c7"
+    }
+  },
+  "topbarCtaButton": {
+    "name": "Support",
+    "url": "https://wildflow.ai/whatsapp"
+  },
+  "tabs": [
+    {
+      "name": "Tutorials",
+      "url": "tutorials"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "url": "https://github.com/wildflowai/platform"
+    },
+    {
+      "name": "Discord",
+      "icon": "discord",
+      "url": "https://wildflow.ai/discord"
+    },
+    {
+      "name": "WhatsApp",
+      "icon": "whatsapp",
+      "url": "https://wildflow.ai/whatsapp"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": ["welcome", "overview"]
+    },
+    {
+      "group": "Applications",
+      "pages": [
+        "applications/marine-protected-areas",
+        "applications/wind-farms",
+        "applications/coral-bleaching",
+        "applications/algae-blooms",
+        "applications/biodiversity-credits"
+      ]
+    },
+    {
+      "group": "Tutorials",
+      "pages": ["tutorials/merge-data"]
+    }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/wildflowai/platform",
+    "linkedin": "https://www.linkedin.com/company/wildflowai",
+    "discord": "https://wildflow.ai/discord",
+    "whatsapp": "https://wildflow.ai/whatsapp",
+    "x": "https://x.com/nozdrenkov"
+  }
+}

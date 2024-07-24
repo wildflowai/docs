@@ -46,6 +46,10 @@
       "pages": ["tutorials/merge-data", "tutorials/sharktrack"]
     },
     {
+      "group": "More",
+      "pages": ["roadmap"]
+    },
+    {
       "group": "Applications",
       "pages": [
         "applications/marine-protected-areas",

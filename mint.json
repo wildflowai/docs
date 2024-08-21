@@ -39,19 +39,13 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["welcome", "overview"]
+      "pages": ["welcome", "wildflow", "coral", "roadmap"]
     },
     {
-      "group": "Tutorials",
-      "pages": ["tutorials/merge-data", "tutorials/sharktrack"]
-    },
-    {
-      "group": "More",
-      "pages": ["roadmap"]
-    },
-    {
-      "group": "Applications",
+      "group": "Archive",
       "pages": [
+        "applications/overview",
+        "tutorials/merge-data",
         "applications/marine-protected-areas",
         "applications/wind-farms",
         "applications/coral-bleaching",

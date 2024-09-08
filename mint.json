@@ -13,6 +13,10 @@
     "anchors": {
       "from": "#2c46db",
       "to": "#6572c7"
+    },
+    "background": {
+      "light": "#ffffff",
+      "dark": "#0f172a"
     }
   },
   "topbarCtaButton": {

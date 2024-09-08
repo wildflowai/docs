@@ -17,7 +17,7 @@
   },
   "topbarCtaButton": {
     "name": "Support",
-    "url": "https://wildflow.ai/whatsapp"
+    "url": "https://wildflow.ai/discord"
   },
   "anchors": [
     {
@@ -29,11 +29,6 @@
       "name": "Discord",
       "icon": "discord",
       "url": "https://wildflow.ai/discord"
-    },
-    {
-      "name": "WhatsApp",
-      "icon": "whatsapp",
-      "url": "https://wildflow.ai/whatsapp"
     }
   ],
   "navigation": [
@@ -43,15 +38,7 @@
     },
     {
       "group": "Archive",
-      "pages": [
-        "applications/overview",
-        "tutorials/merge-data",
-        "applications/marine-protected-areas",
-        "applications/wind-farms",
-        "applications/coral-bleaching",
-        "applications/algae-blooms",
-        "applications/biodiversity-credits"
-      ]
+      "pages": ["applications/overview", "tutorials/merge-data"]
     }
   ],
   "footerSocials": {

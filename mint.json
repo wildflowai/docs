@@ -50,11 +50,22 @@
       "pages": ["applications/overview", "tutorials/merge-data"]
     }
   ],
-  "footerSocials": {
-    "github": "https://github.com/wildflowai/platform",
-    "linkedin": "https://www.linkedin.com/company/wildflowai",
-    "discord": "https://wildflow.ai/discord",
-    "whatsapp": "https://wildflow.ai/whatsapp",
-    "x": "https://x.com/nozdrenkov"
-  }
+  "footerSocials": [
+    {
+      "icon": "github",
+      "url": "https://github.com/wildflowai/platform"
+    },
+    {
+      "icon": "linkedin",
+      "url": "https://www.linkedin.com/company/wildflowai"
+    },
+    {
+      "icon": "discord",
+      "url": "https://wildflow.ai/discord"
+    },
+    {
+      "icon": "x",
+      "url": "https://x.com/nozdrenkov"
+    }
+  ]
 }

@@ -233,26 +233,54 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 # Cleanup
 
-🔵 Make sure we captured GPS coordinates of all Corner Markers and depths of Scalebars.
+🔵 **Ensure you have all necessary data**: Confirm you've captured GPS coordinates of all Corner Markers and depths of Scalebars.
 
-🔵 Collect all Scalebars, Transects and SMB. Make sure you don't leave anything except permanent Corner Markers.
+🔵 **Collect all temporary equipment**: Gather Scalebars, Transects, and the SMB. Make sure to leave only permanent Corner Markers behind.
+
+<Note>
+  Double-check the area to ensure no equipment is left behind. Protecting the
+  reef means leaving it as you found it, or even better, pick up any rubbish you
+  spot, etc!
+</Note>
 
 # Upload
 
-Now it's time to create a 3D model. You can process the data yourself, or we can help you with that. Navigate to wildflow.ai/upload (coming soon) and follow the instructions. One 25x25m quadrat is on average 10-20GB, which normally takes us a few hours to process.
+Now it's time to turn your hard work into a 3D model! You can process the data yourself, or let us help. Simply navigate to [wildflow.ai/upload](https://wildflow.ai/upload) and follow the instructions. A typical 25x25m quadrat requires about 10-20GB of data, which usually takes around 30 minutes to upload (depends on your Internet connection). Once uploaded, processing takes a few hours, and soon you'll be able to explore your reef in stunning 3D detail right in your browser.
+
+<Note>
+  Watching your reef come to life in 3D is incredibly rewarding. You'll see
+  every coral, every nook, and every cranny -- it's like diving without getting
+  wet!
+</Note>
 
 # Tradeoffs
 
-Modern SfM-based photogrammetry has become widely adopted for over a decade now. There's multiple data collection protocols. At the end of the day it's a solution optimising for multiple tradeoffs.
+Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for over a decade, and there are many ways to collect data. Our protocol is designed to balance simplicity, cost, and effectiveness, but it's worth understanding the tradeoffs involved:
 
-- We are aware of GoPro's slow rolling shutter speed – the pixel column on the left side of the frame captures a moment in time different from the pixel column on the right side of the frame, causing less accurate geometry. We think it matters for millimetre resolution, but far away from being a problem for centimetre resolution. Thanks [Will Greene](https://github.com/wogreene) for pointing out.
+- **GoPro's Rolling Shutter**: GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
 
-- The main reason for two cameras is to avoid [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) when capturing a large area.
+- **Two Cameras to Avoid the Bowl Effect**: Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
 
-- We use Transects for navigation. If you imaging smaller area, e.g. 10x10m you can get away without them, followig reciprocal zig zag pattern.
+- **Transects for Navigation**: For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
+
+- **Time vs. Detail**: Swimming slower and closer gives you more detailed photos but increases the risk of gaps if you're not careful. Swimming higher and faster covers more ground but sacrifices some detail. Our protocol strikes a balance, but feel free to adjust based on your goals. Just remember: a complete model is better than a patchy one!
+
+- **Data Volume**: High-frequency photo capture (every 0.5 seconds) ensures plenty of overlap but generates large files. A 128GB SD card can handle about six 25x25m quadrats, but always test your setup on land to avoid surprises underwater.
+
+<Note>
+  Every choice in this protocol is about making reef mapping accessible and
+  effective. You're not just collecting data -- you're creating a digital twin
+  of the reef that can be studied, shared, and preserved for years to come.
+</Note>
 
 # Thanks!
 
-Enjoy mapping corals! Please feel free to ask any questions in our [Discord](http://wildflow.ai/discord) 🤗
+Thank you for being part of this incredible journey to map and protect coral reefs! Your efforts help scientists, conservationists, and communities around the world understand and safeguard these vital ecosystems. Every photo you take is a step toward a healthier ocean—and that's something to be proud of.
 
-Huge thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7) and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for sharing with me ideas and best practices on data collection protocol.
+Feel free to ask questions or share your experiences in our [Discord](http://wildflow.ai/discord) -- we'd love to hear from you! 🤗
+
+Special thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7), and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for their invaluable insights and best practices on data collection.
+
+---
+
+**Why We Do This**: Coral reefs are the rainforests of the sea, teeming with life and beauty. By mapping them, you're not just creating a 3D model -- you're helping to preserve and restore a piece of our planet's future. Imagine looking back in a few years and seeing how your work has contributed to restoring a thriving reef. That's the power of what you're doing. So, gear up, dive in, and let's make a difference together!

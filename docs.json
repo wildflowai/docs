@@ -1,0 +1,83 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Docs",
+  "colors": {
+    "primary": "#4051c2",
+    "light": "#6572c7",
+    "dark": "#2c46db"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "welcome",
+              "wildflow",
+              "coral",
+              "roadmap"
+            ]
+          },
+          {
+            "group": "Photogrammetry",
+            "pages": [
+              "photogrammetry/gopro"
+            ]
+          },
+          {
+            "group": "Archive",
+            "pages": [
+              "applications/overview",
+              "tutorials/merge-data"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/wildflowai/platform",
+          "icon": "github"
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://wildflow.ai/discord",
+          "icon": "discord"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://wildflow.ai"
+  },
+  "background": {
+    "color": {
+      "light": "#ffffff",
+      "dark": "#0f172a"
+    }
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Support",
+      "href": "https://wildflow.ai/discord"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/wildflowai/platform",
+      "linkedin": "https://www.linkedin.com/company/wildflowai",
+      "discord": "https://wildflow.ai/discord",
+      "x": "https://x.com/nozdrenkov"
+    }
+  }
+}

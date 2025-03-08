@@ -42,6 +42,10 @@
       "pages": ["welcome", "wildflow", "coral", "roadmap"]
     },
     {
+      "group": "Photogrammetry",
+      "pages": ["photogrammetry/gopro"]
+    },
+    {
       "group": "Archive",
       "pages": ["applications/overview", "tutorials/merge-data"]
     }

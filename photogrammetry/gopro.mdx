@@ -1,0 +1,222 @@
+---
+title: "[DRAFT] Protocol G503"
+sidebarTitle: "Protocol (2 GoPro)"
+icon: "send-back"
+---
+
+<Warning>
+  This page is still work in progress. We'll add illustrations and more
+  information shortly.
+</Warning>
+
+**See [Google Doc Draft](https://docs.google.com/document/d/1RRp8WW57GA3YNpmtCZXTdQMtw8AuW0wYHAKb16pSKRk/edit) for comments.**
+
+This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
+
+**How to capture a 3D model of coral reef using just two GoPros.** A simple, low-cost way of creating permanent high-res snapshots of coral reefs for divers using photogrammetry. Data collection protocol that could be repeated every few months/years.
+
+**Why:** This allows monitoring hectares of coral reefs with sub-centimeter resolution: identifying corals (species/genuses classification), benthic cover (rock, sand), detecting diseases and their spread. We can track coral demography through time, calculate growth rates, and guide human activities to protect, restore and enhance ecosystems at scale. Fusing 3D data with other modalities such as acoustics, genomics and environmental data (water temperature, salinity, dissolved oxygen etc.) unlocks a comprehensive understanding of coral community and ecosystem dynamics, and how to protect and restore the ecosystem.
+
+**Method:** We did not invent this method. It's a collection of best practices inspired by the awesome work of the MARS [buildingcoral.com](https://buildingcoral.com) team, AIMS, Scripps, Perry Institute and other reef-loving folks. Feel free to follow your favourite protocol. We just providing a simple end-to-end tutorial of how you can collect the data, so that you don't have to think hard about all the tradeoffs (we did it for you). If you follow it, it's guaranteed we can process the data and reconstruct you a high-resolution model, show changes over time, and provide all the insights.
+
+**Quadrat**: let's call the mapping area a "quadrat" for simplicty (we'll use it from now on). We suggest imaging **25x25 meter patches** -- a perfect size for a diving team to explore in one go. If you want to go bigger, go for it! Our system can handle hectares of data from underwater robots. The main limit here is how long the imaging team could stay underwater in one dive. Please don't push it.
+
+<Warning>
+  <h3>
+    Safety first! Never dive alone. Follow standard scuba diving procedures.
+    Make sure everyone on the team is certified and feeling well. Corals need
+    you alive!
+  </h3>
+</Warning>
+
+# Equipment
+
+🔵 **Cameras:** 2 GoPro HERO 10 or better ([example GoPro 13](https://gopro.com/en/gb/shop/cameras/learn/hero13black/CHDHX-131-master.html)) with accessories:
+
+- 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
+- 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
+- 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
+- 2+ SD cards (**V30 or faster** please)
+
+  A 25x25m quadrat requires up to 20GB per camera.
+
+  A 128GB card is perfect for 6 quadrats.
+
+  <Warning>
+    Avoid those massive 1TB cards or slow ones -- they might cause hiccups
+    during your dive. Test your setup on land by recording for a full hour, just
+    to be sure\!
+  </Warning>
+
+🔵 **Camera Rig** -- A simple 60cm bar will do the trick. Make sure both cameras are facing the same way (downward, please) and perfectly parallel (not tilted towards each other). We use a plastic water pipe. A mop handle would do even better.
+
+🔵 **Scalebars** -- Markers that help scale 3D model. So we know the correct size of everything. For a 25x25m area, you only need 5 (soft recommendation). You can make them yourself using a metal workshop and a sticker printer for waterproof labels (like those for boats or cars). We prefer this dumbbell-shaped design where each end displays/encodes a unique number (automatically understood by computer). The centers of the two circles must be exactly 300mm apart. If you can't make these markers, any object with a known length works (even a shoe), but you'll have to measure it manually and tell us its length and where it is on the reef.
+
+🔵 **Colour Charts** -- Placed in the scene to correct and restore the true colours (almost true) of the reef in the images, ensuring accurate visual representation ([example](https://dgkcolor.tools/product/wdkk)). Good to have, but not mandatory.
+
+🔵 **Corner Markers** -- Metal stakes or similar objects (could even be bricks). We need to make sure we map the same area when come next time in a few months or years.
+
+1. Best for nature: ideally we should not leave anything. If we use existing permanent objects (e.g. large rocks) it's the best for envirounment.
+
+2. Best to find again: metal stakes with a small buoy. The buoy could be underwater close to the seabed, so that tourists wouldn't steal it.
+
+3. Best for automation: make auto-detectable corner markers ([great example](https://github.com/Perry-Institute/ReefShape?tab=readme-ov-file#corner-markers)).
+
+The choice ultimately depends on the site, local regulations, permits and your resources. We can process everything (co-register time-series 3D data) without using any markers, just make sure the imaging area is consistent over time.
+
+🔵 **Transects** -- Guide you underwater when mapping the reef. For a 25x25m quadrat you could use 8 transect lines of 25m, or a combo of 50m and 25m lines.
+
+🔵 **GPS** -- Capture location of Corner Markers from the surface, needed for georeferencing and to find the Corner Markers next time you dive.
+
+🔵 **Dive computer** -- Measure the depth of Scalebars (and for diving of course).
+
+🔵 **Compass** -- Navigate underwater when laying out Transects or installing Corner Markers.
+
+🔵 **SMB** -- Surface Marker Buoy for safety and optionaly marking the corner of the quadrat.
+
+# Setup
+
+Let's setup all the equipment and prepare for imaging. This could be a team of 2-3 people.
+
+<Warning>
+  <h3>Please make sure you don't hurt the corals and marine life.</h3> Whatever
+  you do in the water, don't engage with marine life. There could be poisonous
+  snakes etc. Don't touch anything. Don't harass fish.
+</Warning>
+
+## 1. Camera
+
+🔵 Set **Photo mode** (**Superphoto** or Normal, best quality **JPG**).
+
+🔵 Interval photos **every 0.5 seconds**.
+
+<Note>
+  We like RAW but in current GoPro you can't shoot RAW every 0.5 seconds in the
+  interval mode. The shortest it could do is 3 seconds. If your camera shoots
+  shoots RAW, you can do that, it gives us advantage in colour correcting, but
+  takes up more space.
+</Note>
+
+## 2. Corner Markers
+
+If you already have Corner Markers installed (when doing a repeated survey), you only need to locate them underwater. GPS and snorkelling could help you locate them. You can skip reading this chapter about installing Corner Markers and continue with the [Transects](#3-transects) chapter.
+
+🔵 Choose a site that needs to be mapped. Think how the quadrat would be placed here, where its sides would end up.
+
+🔵 Install 4 Corner Markers defining survey area. This is usually done together when laying out Transects.
+
+<Warning>
+  If you have to hummer metal stakes as Corner Markers, or bring some concrete
+  blocks, please make sure you choose an area without corals. Also you must have
+  all necessary permits to do that. Prefer using existing objects as markers if
+  possible.
+</Warning>
+
+<Note>
+  NOTE: it's helpful to set up an SMB at one of the corners (on the deeper end)
+  so that you can easily find a starting point for imaging and signal boats that
+  there are divers here.
+</Note>
+
+🔵 Capture GPS coordinates of all Corner Markers. This step could be done anytime, usually by a snorkeler.
+
+## 3. Transects
+
+🔵 Lay out outer Transects making perimeter of the 25x25m quadrat that we're planning to image. This could be done while installing Corner Markers.
+
+Ideally make sure the sides of the quadrat are aligned with cardinal directions (North/South or East/West) or parallel to the shore. Use compas to navigate and make 90 deg turns. Somebody snorkelling could also help guide this process.
+
+When laying Transects it's often helpful to wrap the line around a rock or smth every 10 meters or so to avoid line flattering.
+
+🔵 Then lay out inner Transects every 5 meters.
+
+<Warning>
+  When the reef is not flat, make sure the transects are perpendicular to the
+  slope, so that you don't bounce up and down when capturing the reef - to avoid
+  decompression sickness.
+</Warning>
+
+<Note>
+  You can also set up multiple quadrats one next to each other. This way you
+  need less permanent corner markers. And you can save time as you do them all
+  at once.
+</Note>
+
+## 4. Scalebars
+
+🔵 Evenly distribute Scalebars across the quadrat. For example, put 4 in the corners and 1 in the centre. Make sure they are visible from different sides.
+
+🔵 Place Colour Charts them near Scalebars, so they are easy to find.
+
+🔵 Measure the depth of each Scalebar (only one side of the dumbbell) using your dive computer (you can put your dive computer on the marker and take a picture of it) or write it down the depth. We need scalebar identifier and depth, e.g. `007 - 3.5m`.
+
+# Imaging
+
+If you have enough people, imaging could be done by the second team of 2 people. If not, the first team could do everything, maybe in multiple dives.
+
+## 1. Enable camera
+
+🔵 Find a starting point -- one of the corners on the deeper end. If you have an SMB at one of the corners installed, it's best to start there.
+
+🔵 Make sure the camera rig is stable and both cameras facing in the same direction.
+
+🔵 Turn on both cameras before descending and make sure the correct mode is set up. Photo mode. Interval shooting (small clock icon is on).
+
+🔵 Press the record button on both cameras, once descendedand ready. Ideally simultaneously. But it's not a problem if they are out of sync.
+
+🔵 Make sure both cameras are taking pictures. You can see a number increasing on the screen. Also at some point the screen will turn off, you can see the red light is blinking every 0.5 seconds – that means the cameras are filming.
+
+## 2. Camera position
+
+Hold the camera rig in front of you, keeping both cameras facing down, parallel to the surface.
+
+WARNING: if you tilt cameras, it would capture points far away from the camera, and those points would make the model more blue. So try to keep cameras parallel to the surface, unless you want to capture the sides of a large coral colony or a complex object.
+
+Keep the camera 1-2 meters above the substrate, aiming for 1.5 meters.
+
+NOTE: in GoPro everything further away than 31 cm (12 inches) is in focus and would be sharp.
+
+Make sure you don’t take pictures of your legs, fingers, pressure gauge and your buddy, because all of that would make 3d reconstruction harder.
+
+## 3. Swimming pattern
+
+The general idea is to capture coral reefs from all sides, so that we can create a 3D model. Think like you’re spray painting the reef and want to cover it all.
+WARNING: the biggest failure would be to not cover some part of the reef, i.e. to have a hole in the data.
+We recommend following this pattern:
+
+Make sure we always have a 1.5-2m margin, i.e. we start and finish outside the perimeter. Also when swimming, make sure you don’t turn on the transect line itself, swim through a bit further to have a 1.5-2m margin.
+When turning, please make sure you’re approximately 1.5m away from the previous line/swimming trajectory (we swim parallel to our previous trajectory). If we’re too far, we would get a hole. If we’re too close we would get too many pictures.
+
+## 4. Large colonies
+
+If you have massive a few meter large colonies or some complex biorock structures, swimming in a pattern described would create a 3D model and an ortho mosaic. However it would be beneficial to also make sure we capture all the sides of them.
+
+The best would be to follow your regular trajectory pattern as described above and then once you finish mapping this structure from the top, do a little circle around this structure and come back to your original trajectory. You can do multiple circles on different heights to capture the whole object.
+
+When doing the circles, tilt both cameras towards the structure.
+
+# Cleanup
+
+🔵 Make sure we captured GPS coordinates of all Corner Markers and depths of Scalebars.
+
+🔵 Collect all Scalebars, Transects and SMB. Make sure you don't leave anything except permanent Corner Markers.
+
+# Upload
+
+Now it's time to create a 3D model. You can process the data yourself, or we can help you with that. Navigate to wildflow.ai/upload (coming soon) and follow the instructions. One 25x25m quadrat is on average 10-20GB, which normally takes us a few hours to process.
+
+# Tradeoffs
+
+Modern SfM-based photogrammetry has become widely adopted for over a decade now. There's multiple data collection protocols. At the end of the day it's a solution optimising for multiple tradeoffs.
+
+- We are aware of GoPro’s slow rolling shutter speed – the pixel column on the left side of the frame captures a moment in time different from the pixel column on the right side of the frame, causing less accurate geometry. We think it matters for millimetre resolution, but far away from being a problem for centimetre resolution. Thanks [Will Greene](https://github.com/wogreene) for pointing out.
+
+- The main reason for two cameras is to avoid [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) when capturing a large area.
+
+- We use Transects for navigation. If you imaging smaller area, e.g. 10x10m you can get away without them, followig reciprocal zig zag pattern.
+
+# Thanks!
+
+Enjoy mapping corals! Please feel free to ask any questions in our [Discord](http://wildflow.ai/discord) 🤗
+
+Huge thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7) and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for sharing with me ideas and best practices on data collection protocol.

@@ -2,17 +2,13 @@
 title: "[DRAFT] Protocol G503"
 sidebarTitle: "Protocol (2 GoPro)"
 icon: "send-back"
-description: "How to capture a 3D model of coral reef using just two GoPros"
 ---
-
-<Warning>
-  This page is still work in progress. We'll add illustrations and more
-  information shortly.
-</Warning>
 
 **See** [Google Doc Draft](https://docs.google.com/document/d/1RRp8WW57GA3YNpmtCZXTdQMtw8AuW0wYHAKb16pSKRk/edit) **for comments.**
 
 This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
+
+# Intro
 
 **How to capture a 3D model of coral reef using just two GoPros.** A simple, low-cost way of creating permanent high-res snapshots of coral reefs for divers using photogrammetry. Data collection protocol that could be repeated every few months/years.
 
@@ -34,13 +30,13 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 🔵 **Cameras:** 2 GoPro HERO 10 or better ([example GoPro 13](https://gopro.com/en/gb/shop/cameras/learn/hero13black/CHDHX-131-master.html)) with accessories:
 
-* 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
+- 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
 
-* 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
+- 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
 
-* 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
+- 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
 
-* 2+ SD cards (**V30 or faster** please)A 25x25m quadrat requires up to 20GB per camera.A 128GB card is perfect for 6 quadrats.
+- 2+ SD cards (**V30 or faster** please)A 25x25m quadrat requires up to 20GB per camera.A 128GB card is perfect for 6 quadrats.
 
   <Warning>
     Avoid those massive 1TB cards or slow ones -- they might cause hiccups
@@ -51,6 +47,10 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 🔵 **Camera Rig** -- A simple 60cm bar will do the trick. Make sure both cameras are facing the same way (downward, please) and perfectly parallel (not tilted towards each other). We use a plastic water pipe. A mop handle would do even better.
 
 🔵 **Scalebars** -- Markers that help scale 3D model. So we know the correct size of everything. For a 25x25m area, you only need 5 (soft recommendation). You can make them yourself using a metal workshop and a sticker printer for waterproof labels (like those for boats or cars). We prefer this dumbbell-shaped design where each end displays/encodes a unique number (automatically understood by computer). The centers of the two circles must be exactly 300mm apart. If you can't make these markers, any object with a known length works (even a shoe), but you'll have to measure it manually and tell us its length and where it is on the reef.
+
+![scalebars](/images/photogrammetry/scalebars.png)
+
+To print it, download this [Scalebar design PDF](/files/aims-scalebars-design.pdf) developed by AIMS / EcoRRAP. Also see their detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Thanks to [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
 
 🔵 **Colour Charts** -- Placed in the scene to correct and restore the true colours (almost true) of the reef in the images, ensuring accurate visual representation ([example](https://dgkcolor.tools/product/wdkk)). Good to have, but not mandatory.
 
@@ -128,6 +128,8 @@ When laying Transects, wrap the line around a rock or something every 10 meters 
 
 🔵 **Lay out inner Transects** every 5 meters.
 
+![Recommended Transects layout](/images/photogrammetry/transects.jpg)
+
 <Warning>
   If the reef isn't flat, ensure the Transects are perpendicular to the slope.
   This prevents bouncing up and down during imaging -- which could cause
@@ -152,7 +154,9 @@ When laying Transects, wrap the line around a rock or something every 10 meters 
 Let's map the reef! This can be done by a second team of two people, or by the same team if you don't have enough people. Follow these steps to take photos with two GoPros and create a 3D model of the coral reef.
 
 <Warning>
-  **Avoid gaps in coverage!** The biggest challenge in this process is avoiding holes in the model caused by gaps in photo coverage. Don't worry -- we'll show you exactly how to prevent this as we explain the steps ahead.
+  **Avoid gaps in coverage!** The biggest challenge in this process is avoiding
+  holes in the model caused by gaps in photo coverage. Don't worry -- we'll show
+  you exactly how to prevent this as we explain the steps ahead.
 </Warning>
 
 ## 1. Camera Setup
@@ -255,15 +259,15 @@ Now it's time to turn your hard work into a 3D model! You can process the data y
 
 Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for over a decade, and there are many ways to collect data. Our protocol is designed to balance simplicity, cost, and effectiveness, but it's worth understanding the tradeoffs involved:
 
-* **GoPro's Rolling Shutter**: GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
+- **GoPro's Rolling Shutter**: GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
 
-* **Two Cameras to Avoid the Bowl Effect**: Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
+- **Two Cameras to Avoid the Bowl Effect**: Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
 
-* **Transects for Navigation**: For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
+- **Transects for Navigation**: For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
 
-* **Time vs. Detail**: Swimming slower and closer gives you more detailed photos but increases the risk of gaps if you're not careful. Swimming higher and faster covers more ground but sacrifices some detail. Our protocol strikes a balance, but feel free to adjust based on your goals. Just remember: a complete model is better than a patchy one!
+- **Time vs. Detail**: Swimming slower and closer gives you more detailed photos but increases the risk of gaps if you're not careful. Swimming higher and faster covers more ground but sacrifices some detail. Our protocol strikes a balance, but feel free to adjust based on your goals. Just remember: a complete model is better than a patchy one!
 
-* **Data Volume**: High-frequency photo capture (every 0.5 seconds) ensures plenty of overlap but generates large files. A 128GB SD card can handle about six 25x25m quadrats, but always test your setup on land to avoid surprises underwater.
+- **Data Volume**: High-frequency photo capture (every 0.5 seconds) ensures plenty of overlap but generates large files. A 128GB SD card can handle about six 25x25m quadrats, but always test your setup on land to avoid surprises underwater.
 
 <Note>
   Every choice in this protocol is about making reef mapping accessible and
@@ -277,8 +281,4 @@ Thank you for being part of this incredible journey to map and protect coral ree
 
 Feel free to ask questions or share your experiences in our [Discord](http://wildflow.ai/discord) -- we'd love to hear from you! 🤗
 
-***
-
-Special thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7), and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for their invaluable insights and best practices on data collection.
-
-**Why We Do This**: Coral reefs are the rainforests of the sea, teeming with life and beauty. By mapping them, you're not just creating a 3D model -- you're helping to preserve and restore a piece of our planet's future. Imagine looking back in a few years and seeing how your work has contributed to restoring a thriving reef. That's the power of what you're doing. So, gear up, dive in, and let's make a difference together!
+Special thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7), and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for sharing the best practices on data collection.

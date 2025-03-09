@@ -1,10 +1,8 @@
 ---
-title: "[DRAFT] Protocol G503"
+title: "Protocol G503"
 sidebarTitle: "Protocol (2 GoPro)"
 icon: "send-back"
 ---
-
-**See** [Google Doc Draft](https://docs.google.com/document/d/1RRp8WW57GA3YNpmtCZXTdQMtw8AuW0wYHAKb16pSKRk/edit) **for comments.**
 
 This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
@@ -46,9 +44,11 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 🔵 **Camera Rig** -- A simple 60cm bar will do the trick. Make sure both cameras are facing the same way (downward, please) and perfectly parallel (not tilted towards each other). We use a plastic water pipe. A mop handle would do even better.
 
+![Camera Rig](/images/photogrammetry/camera-rig.jpg)
+
 🔵 **Scalebars** -- Markers that help scale 3D model. So we know the correct size of everything. For a 25x25m area, you only need 5 (soft recommendation). You can make them yourself using a metal workshop and a sticker printer for waterproof labels (like those for boats or cars). We prefer this dumbbell-shaped design where each end displays/encodes a unique number (automatically understood by computer). The centers of the two circles must be exactly 300mm apart. If you can't make these markers, any object with a known length works (even a shoe), but you'll have to measure it manually and tell us its length and where it is on the reef.
 
-![scalebars](/images/photogrammetry/scalebars.png)
+![Scalebars](/images/photogrammetry/scalebars.png)
 
 To print it, download this [Scalebar design PDF](https://wildflow.ai/aims-scalebar-design) developed by AIMS / EcoRRAP. Also see their detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Thanks to [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
 
@@ -149,6 +149,8 @@ When laying Transects, wrap the line around a rock or something every 10 meters 
 
 🔵 **Measure the depth** of each Scalebar using your Dive Computer. Place the computer on the marker and note the depth, or take a photo for reference. Record the Scalebar identifier and depth, e.g., '007 - 3.5m'.
 
+![Markers](/images/photogrammetry/markers.jpg)
+
 # Imaging
 
 Let's map the reef! This can be done by a second team of two people, or by the same team if you don't have enough people. Follow these steps to take photos with two GoPros and create a 3D model of the coral reef.
@@ -193,6 +195,8 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 🔵 **Avoid capturing** your legs, fins, gear, or your buddy in the photos. These can confuse the 3D reconstruction algorithm.
 
+![Positioning](/images/photogrammetry/positioning.jpg)
+
 ## 3. Swimming Pattern
 
 🔵 **Swim in a lawnmower pattern**: go back and forth across the area, like mowing a lawn, until you've covered the entire reef. You don't need to return to the starting point -- just finish once the whole area is photographed.
@@ -212,6 +216,8 @@ Let's map the reef! This can be done by a second team of two people, or by the s
   without missing spots.
 </Note>
 
+![Swimming Pattern](/images/photogrammetry/swimming-pattern.jpg)
+
 ## 4. Large Colonies
 
 🔵 **When you encounter a large coral or complex structure during your swim pattern**, swim over it as part of your regular back-and-forth lines, then pause briefly to swim in circles around it.
@@ -226,6 +232,8 @@ Let's map the reef! This can be done by a second team of two people, or by the s
   This ensures the 3D model includes all sides of big or complex features
   without breaking your overall coverage flow.
 </Note>
+
+![Large Colonies Swimming Pattern](/images/photogrammetry/large-colony.jpg)
 
 ## 5. Finishing Up
 
@@ -255,19 +263,26 @@ Now it's time to turn your hard work into a 3D model! You can process the data y
   wet!
 </Note>
 
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://wildflow.ai/images/wildflowcoral.webm"
+></video>
+
 # Tradeoffs
 
 Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for over a decade, and there are many ways to collect data. Our protocol is designed to balance simplicity, cost, and effectiveness, but it's worth understanding the tradeoffs involved:
 
-- **GoPro's Rolling Shutter**: GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
+- **GoPro's Rolling Shutter**. GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
 
-- **Two Cameras to Avoid the Bowl Effect**: Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
+- **Two Cameras to Avoid the Bowl Effect**. Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
 
-- **Transects for Navigation**: For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
+- **Transects for Navigation**. For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
 
-- **Time vs. Detail**: Swimming slower and closer gives you more detailed photos but increases the risk of gaps if you're not careful. Swimming higher and faster covers more ground but sacrifices some detail. Our protocol strikes a balance, but feel free to adjust based on your goals. Just remember: a complete model is better than a patchy one!
-
-- **Data Volume**: High-frequency photo capture (every 0.5 seconds) ensures plenty of overlap but generates large files. A 128GB SD card can handle about six 25x25m quadrats, but always test your setup on land to avoid surprises underwater.
+- **No Triad Marker for Orientation**. Usually, people use a triad marker to define vertical direction, making it easy to align orthomosaics with a consistent normal vector. We skip that hassle and instead co-register 3D models using permanent common points-like stable rocks, not living coral that might grow -- ensuring everything stays self-consistent over time. For vertical alignment, we rely on the depth from Dive Computers on Scalebars, with about a 25cm error. That's probably fine for a 25x25m area, and the big win is we avoid lugging around that awkward triad-traveling with it is a nightmare, and building one is a pain!
 
 <Note>
   Every choice in this protocol is about making reef mapping accessible and
@@ -277,8 +292,11 @@ Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for ov
 
 # Thanks!
 
-Thank you for being part of this incredible journey to map and protect coral reefs! Your efforts help scientists, conservationists, and communities around the world understand and safeguard these vital ecosystems. Every photo you take is a step toward a healthier ocean—and that's something to be proud of.
+Thank you for being part of this incredible journey to map and protect coral reefs! Your efforts help scientists, conservationists, and communities around the world understand and safeguard these vital ecosystems. Every photo you take is a step toward a healthier ocean -- and that's something to be proud of.
 
-Feel free to ask questions or share your experiences in our [Discord](http://wildflow.ai/discord) -- we'd love to hear from you! 🤗
+<Note>
+  Feel free to ask questions or share your experiences in our
+  [Discord](http://wildflow.ai/discord) -- we'd love to hear from you!
+</Note>
 
 Special thanks to [John Stratford](https://x.com/JohnStratford_), [Jason Lynch](https://www.linkedin.com/in/jason-lynch-442575153), [Will Barnes](https://www.linkedin.com/in/william-barnes-a292b41a7), and [Ben Williams](https://www.linkedin.com/in/ben-williams-ucl) for sharing the best practices on data collection.

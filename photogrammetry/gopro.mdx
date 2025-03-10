@@ -31,13 +31,23 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 🔵 **Cameras:** 2 GoPro HERO 10 or better ([example GoPro 13](https://gopro.com/en/gb/shop/cameras/learn/hero13black/CHDHX-131-master.html)) with accessories:
 
-- 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
+* 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
 
-- 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
+* 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
 
-- 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
+* 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
 
-- 2+ SD cards (**V30 or faster** please)A 25x25m quadrat requires up to 20GB per camera.A 128GB card is perfect for 6 quadrats.
+* 2+ SD cards (**V30 or faster** please)
+
+
+
+
+  A 25x25m quadrat requires up to 20GB per camera.
+
+
+
+
+  A 128GB card is perfect for 6 quadrats.
 
   <Warning>
     Avoid those massive 1TB cards or slow ones -- they might cause hiccups
@@ -53,7 +63,7 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 ![Scalebars](/images/photogrammetry/scalebars.png)
 
-To print it, download this [Scalebar design PDF](https://wildflow.ai/aims-scalebar-design) developed by AIMS / EcoRRAP. Also see their detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Thanks to [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
+To print it, download this [Scalebar design PDF](https://wildflow.ai/aims-scalebar-design) developed by the University of Sydney and AIMS. Also see AIMS's detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Huge thanks to [Will Figueira](https://www.linkedin.com/in/william-figueira-9b972b69/) and [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
 
 🔵 **Colour Charts** -- Placed in the scene to correct and restore the true colours (almost true) of the reef in the images, ensuring accurate visual representation ([example](https://dgkcolor.tools/product/wdkk)). Good to have, but not mandatory.
 
@@ -266,26 +276,19 @@ Now it's time to turn your hard work into a 3D model! You can process the data y
   wet!
 </Note>
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full aspect-video"
-  src="https://wildflow.ai/images/wildflowcoral.webm"
-></video>
+<video autoPlay muted loop playsInline className="w-full aspect-video" src="https://wildflow.ai/images/wildflowcoral.webm" />
 
 # Tradeoffs
 
 Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for over a decade, and there are many ways to collect data. Our protocol is designed to balance simplicity, cost, and effectiveness, but it's worth understanding the tradeoffs involved:
 
-- **GoPro's Rolling Shutter**. GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
+* **GoPro's Rolling Shutter**. GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
 
-- **Two Cameras to Avoid the Bowl Effect**. Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
+* **Two Cameras to Avoid the Bowl Effect**. Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
 
-- **Transects for Navigation**. For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
+* **Transects for Navigation**. For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
 
-- **No Triad Marker for Orientation**. Usually, people use a triad marker to define vertical direction, making it easy to align orthomosaics with a consistent normal vector. We skip that hassle and instead co-register 3D models using permanent common points-like stable rocks, not living coral that might grow -- ensuring everything stays self-consistent over time. For vertical alignment, we rely on the depth from Dive Computers on Scalebars, with about a 25cm error. That's probably fine for a 25x25m area, and the big win is we avoid lugging around that awkward triad-traveling with it is a nightmare, and building one is a pain!
+* **No Triad Marker for Orientation**. Usually, people use a triad marker to define vertical direction, making it easy to align orthomosaics with a consistent normal vector. We skip that hassle and instead co-register 3D models using permanent common points-like stable rocks, not living coral that might grow -- ensuring everything stays self-consistent over time. For vertical alignment, we rely on the depth from Dive Computers on Scalebars, with about a 25cm error. That's probably fine for a 25x25m area, and the big win is we avoid lugging around that awkward triad-traveling with it is a nightmare, and building one is a pain!
 
 <Note>
   Every choice in this protocol is about making reef mapping accessible and

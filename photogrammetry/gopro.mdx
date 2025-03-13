@@ -2,7 +2,7 @@
 title: "Protocol G503"
 sidebarTitle: "Protocol (2 GoPro)"
 icon: "send-back"
-description: "Capture a 3D model of coral reef with two GoPros"
+description: "Capture a 3D model of a coral reef with two GoPros"
 ---
 
 This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
@@ -11,13 +11,13 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 # Intro
 
-**How to capture a 3D model of coral reef with two GoPros.** A simple, low-cost way of creating permanent high-res snapshots of coral reefs for divers using photogrammetry. Data collection protocol that could be repeated every few months/years.
+**How to capture a 3D model of a coral reef with two GoPros.** A simple, low-cost way of creating permanent high-res snapshots of coral reefs for divers using photogrammetry. Data collection protocol. Could be repeated every few months/years.
 
-**Why:** This allows monitoring hectares of coral reefs with sub-centimeter resolution: identifying corals (species/genuses classification), benthic cover (rock, sand), detecting diseases and their spread. We can track coral demography through time, calculate growth rates, and guide human activities to protect, restore and enhance ecosystems at scale. Fusing 3D data with other modalities such as acoustics, genomics and environmental data (water temperature, salinity, dissolved oxygen etc.) unlocks a comprehensive understanding of coral community and ecosystem dynamics, and how to protect and restore the ecosystem.
+**Why?** This allows monitoring hectares of coral reefs with sub-centimetre resolution: identifying corals (species/genuses classification), benthic cover (rock, sand), and detecting diseases and their spread. We can track coral demography through time, calculate growth rates and carbonate, and guide human activities to protect, restore and enhance ecosystems at scale. Fusing 3D data with other modalities such as acoustics, genomics and environmental data (water temperature, salinity, dissolved oxygen etc.) unlocks a comprehensive understanding of coral community and ecosystem dynamics, and how to protect and restore the ecosystem.
 
-**Method:** We did not invent this method. It's a collection of best practices inspired by the awesome work of the MARS [buildingcoral.com](https://buildingcoral.com) team, AIMS, Scripps, Perry Institute and other reef-loving folks. Feel free to follow your favourite protocol. We just providing a simple end-to-end tutorial of how you can collect the data, so that you don't have to think hard about all the tradeoffs (we did it for you). If you follow it, it's guaranteed we can process the data and reconstruct you a high-resolution model, show changes over time, and provide all the insights.
+**Method.** We did not invent this method. It's a collection of the best practices inspired by the awesome work of the MARS [buildingcoral.com](https://buildingcoral.com) team, AIMS, Scripps, University College London, University of Exeter, Perry Institute, Tritonia Scientific and other reef-loving folks. Feel free to follow your favourite protocol. We are just providing a simple end-to-end tutorial on how you can collect the data, so that you don't have to think hard about all the tradeoffs (we did it for you). If you follow it, we guarantee that we can process the data and reconstruct you a high-resolution model, show changes over time, and provide all the actionable insights.
 
-**Quadrat**: let's call the mapping area a "quadrat" for simplicty (we'll use it from now on). We suggest imaging **25x25 meter patches** -- a perfect size for a diving team to explore in one go. If you want to go bigger, go for it! Our system can handle hectares of data from underwater robots. The main limit here is how long the imaging team could stay underwater in one dive. Please don't push it.
+**Patch.** Let's call the mapping survey area a "Patch" for simplicty (we'll use it from now on). We suggest imaging **25x25 metre square Patches** -- a perfect size for a diving team to explore in one go. If you want to go bigger, go for it! Our system can handle hectares of data from underwater robots. The main limit here is how long the imaging team could stay underwater in one dive. Please don't push it.
 
 <Warning>
   <h3>
@@ -31,23 +31,17 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 🔵 **Cameras:** 2 GoPro HERO 10 or better ([example GoPro 13](https://gopro.com/en/gb/shop/cameras/learn/hero13black/CHDHX-131-master.html)) with accessories:
 
-* 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
+- 2 underwater housings for cameras ([example](https://gopro.com/en/gb/shop/mounts-accessories/protective-housing-plus-waterproof-case/ADDIV-001.html))
 
-* 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
+- 2 batteries ([example](%20https://gopro.com/en/gb/shop/mounts-accessories/enduro-battery-2pack/AEBAT-201.html)) and 1 charger ([example](https://gopro.com/en/gb/shop/mounts-accessories/hero13-black-dual-battery-charger-enduro-batteries/AEDBD-201-master.html))
 
-* 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
+- 2 handlebar mount ([example](https://gopro.com/en/gb/shop/mounts-accessories/handlebar-seatpost-pole-mount/AGTSM-001.html))
 
-* 2+ SD cards (**V30 or faster** please)
+- 2+ SD cards (**V30 or faster** please)
 
+  A 25x25m Patch requires up to 20GB per camera.
 
-
-
-  A 25x25m quadrat requires up to 20GB per camera.
-
-
-
-
-  A 128GB card is perfect for 6 quadrats.
+  A 128GB card is perfect for 6 Patches.
 
   <Warning>
     Avoid those massive 1TB cards or slow ones -- they might cause hiccups
@@ -63,33 +57,33 @@ This page: [wildflow.ai/protocol](https://wildflow.ai/protocol)
 
 ![Scalebars](/images/photogrammetry/scalebars.png)
 
-To print it, download this [Scalebar design PDF](https://wildflow.ai/aims-scalebar-design) developed by the University of Sydney and AIMS. Also see AIMS's detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Huge thanks to [Will Figueira](https://www.linkedin.com/in/william-figueira-9b972b69/) and [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
+To print it, download this [Scalebar design PDF](https://wildflow.ai/scalebar-design-figueira-ferrari) developed by the University of Sydney. Also see AIMS's detailed [Photogrammetry SOP](https://www.aims.gov.au/sites/default/files/2023-08/AIMS_EcoRRAP_SOP14_V1_FIeld-Photogrammetry4D_Overview-infield-workflow_2023.pdf) and [templates](https://apps.aims.gov.au/metadata/view/c353b247-abb1-46cf-bfe2-aa65e727eca5). Thanks to [Will Figueira](https://www.linkedin.com/in/william-figueira-9b972b69) and [Renata Ferrari](https://www.linkedin.com/in/renata-ferrari-71448353).
 
 🔵 **Colour Charts** -- Placed in the scene to correct and restore the true colours (almost true) of the reef in the images, ensuring accurate visual representation ([example](https://dgkcolor.tools/product/wdkk)). Good to have, but not mandatory.
 
-🔵 **Corner Markers** -- Metal stakes or similar objects (could even be bricks). We need to make sure we map the same area when come next time in a few months or years.
+🔵 **Corner Markers** -- Metal stakes or similar objects (could even be bricks). We need to make sure we map the same area when you come next time in a few months or years.
 
-1. Best for nature: ideally we should not leave anything. If we use existing permanent objects (e.g. large rocks) it's the best for envirounment.
+1. Best for nature: ideally we should not leave anything. If we use existing permanent objects (e.g. large rocks) it's the best for the environment.
 
 2. Best to find again: metal stakes with a small buoy. The buoy could be underwater close to the seabed, so that tourists wouldn't steal it.
 
 3. Best for automation: make auto-detectable corner markers ([great example](https://github.com/Perry-Institute/ReefShape?tab=readme-ov-file#corner-markers)).
 
-The choice ultimately depends on the site, local regulations, permits and your resources. We can process everything (co-register time-series 3D data) without using any markers, just make sure the imaging area is consistent over time.
+The choice ultimately depends on the site, local regulations, permits and your resources. We can process everything (co-register time-series 3D data) without using any markers, just make sure the imaging area is consistent over time. Preferably ensure the images are collected at the same point in the day (soft recommendation).
 
-🔵 **Transects** -- Guide you underwater when mapping the reef. For a 25x25m quadrat you could use 8 transect lines of 25m, or a combo of 50m and 25m lines.
+🔵 **Transects** -- Guide you underwater when mapping the reef. For a 25x25m Patch you could use 8 transect lines of 25m, or a combo of 50m and 25m lines.
 
-🔵 **GPS** -- Capture location of Corner Markers from the surface, needed for georeferencing and to find the Corner Markers next time you dive.
+🔵 **GPS** -- Capture the location of Corner Markers from the surface, needed for georeferencing and to find the Corner Markers next time you dive.
 
 🔵 **Dive computer** -- Measure the depth of Scalebars (and for diving of course).
 
 🔵 **Compass** -- Navigate underwater when laying out Transects or installing Corner Markers.
 
-🔵 **SMB** -- Surface Marker Buoy for safety and optionaly marking the corner of the quadrat.
+🔵 **SMB** -- Surface Marker Buoy for safety and optionaly marking the corner of the Patch.
 
 # Setup
 
-Let's set up all the equipment and prepare for imaging. This could be a team of 2-3 people.
+Let's set up all the equipment and prepare for imaging. This could be a team of 2-3 divers.
 
 <Warning>
   <h3>Please make sure you don't harm corals or marine life.</h3> Whatever you
@@ -99,7 +93,7 @@ Let's set up all the equipment and prepare for imaging. This could be a team of 
 
 ## 1. Camera
 
-🔵 **Set the cameras** to Photo mode (Superphoto or Normal, best quality JPG).
+🔵 **Set the cameras** to Photo mode (Wide angle, Superphoto or Normal, best quality JPG).
 
 🔵 **Set the interval** to take photos every 0.5 seconds.
 
@@ -113,7 +107,7 @@ Let's set up all the equipment and prepare for imaging. This could be a team of 
 
 If you're doing a repeated survey and already have Corner Markers installed, just locate them underwater using GPS and snorkelling. You can skip this section and move to [Transects](#3-transects). Otherwise, follow the steps below to install them.
 
-🔵 **Choose a site** that needs to be mapped. Think about how the quadrat will be placed and where its sides will end up.
+🔵 **Choose a site** that needs to be mapped. Think about how the Patch will be located and where its sides will end up.
 
 🔵 **Install 4 Corner Markers** to define the survey area. This is usually done together with laying out Transects.
 
@@ -129,17 +123,17 @@ If you're doing a repeated survey and already have Corner Markers installed, jus
   there are divers here.
 </Note>
 
-🔵 **Capture GPS coordinates** of all Corner Markers. This can be done anytime, usually by a snorkeller.
+🔵 **Capture GPS coordinates** of all Corner Markers. This can be done anytime, usually by someone snorkelling.
 
 ## 3. Transects
 
-🔵 **Lay out outer Transects** to form the perimeter of the 25x25m quadrat. This can be done while installing Corner Markers.
+🔵 **Lay out outer Transects** to form the perimeter of the 25x25m Patch. This can be done while installing Corner Markers.
 
-Ideally, align the sides of the quadrat with cardinal directions (North/South or East/West) or parallel to the shore. Use a Compass to navigate and make 90-degree turns. A snorkeller can help guide this process from the surface.
+Ideally, align the sides of the Patch with cardinal directions (North/South or East/West) or parallel to the shore. Use a Compass to navigate and make 90-degree turns. A snorkeller can help guide this process from the surface.
 
-When laying Transects, wrap the line around a rock or something every 10 meters to keep it from fluttering.
+When laying Transects, thread the tape measure under a rock or a coral structure (non-destructively) every 10 metres to keep it from fluttering.
 
-🔵 **Lay out inner Transects** every 5 meters.
+🔵 **Lay out inner Transects** every 5 m intervals within the 25x25m box. It should look like swimming pool divider lines.
 
 ![Recommended Transects layout](/images/photogrammetry/transects.jpg)
 
@@ -150,23 +144,23 @@ When laying Transects, wrap the line around a rock or something every 10 meters 
 </Warning>
 
 <Note>
-  You can set up multiple quadrats next to each other. This reduces the need for
+  You can set up multiple Patches next to each other. This reduces the need for
   permanent Corner Markers and saves time by doing them all at once.
 </Note>
 
 ## 4. Scalebars
 
-🔵 **Evenly distribute Scalebars** across the quadrat. For example, place 4 in the corners and 1 in the centre. Ensure they're visible from different sides.
+🔵 **Evenly distribute Scalebars** across the Patch. For example, place 4 in the corners and 1 in the centre. Ensure they're visible from different sides.
 
 🔵 **Place Colour Charts** near Scalebars so they're easy to find.
 
-🔵 **Measure the depth** of each Scalebar using your Dive Computer. Place the computer on the marker and note the depth, or take a photo for reference. Record the Scalebar identifier and depth, e.g., '007 - 3.5m'.
+🔵 **Measure the depth** of each Scalebar using your Dive Computer. Place the computer on the marker and note the depth, or take a photo for reference. Record the Scalebar identifier code and depth, e.g., '007 - 3.5m'.
 
 ![Markers](/images/photogrammetry/markers.jpg)
 
 # Imaging
 
-Let's map the reef! This can be done by a second team of two people, or by the same team if you don't have enough people. Follow these steps to take photos with two GoPros and create a 3D model of the coral reef.
+Let's map the reef! This can be done by a second team of two people, or by the same team if you don't have enough divers. Follow these steps to take photos with two GoPros and create a 3D model of the coral reef.
 
 <Warning>
   **Avoid gaps in coverage!** The biggest challenge in this process is avoiding
@@ -178,25 +172,25 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 🔵 **Find the starting point** -- usually one of the corners on the deeper end. If there's an SMB (Surface Marker Buoy), start there.
 
-🔵 **Check the camera rig** is stable and both cameras are facing the same way (downward).
+🔵 **Check the camera rig** is stable and both cameras are facing downs.
 
 🔵 **Turn on both cameras** before descending. Make sure they're set to Photo mode, taking pictures every 0.5 seconds.
 
-🔵 **Press the record button** on both cameras once you're underwater and ready. It's okay if they're not perfectly synced.
+🔵 **Press the record button** on both cameras once you're underwater and ready. It's okay if they're not perfectly synchronised.
 
-🔵 **Confirm both cameras are working**. Look for a number increasing on the screen or a blinking red light.
+🔵 **Confirm both cameras are working**. Ensure the photo count number is increasing on the screen or whether there is a blinking red activation light.
 
 ## 2. Positioning
 
-🔵 **Hold the camera rig** in front of you, keeping both cameras pointing straight down.
+🔵 **Hold the camera rig** in front of you, keeping both cameras pointing straight down to the coral substrate.
 
-🔵 **Stay 1-2 meters above the reef**, aiming for 1.5 meters. This keeps everything in focus.
+🔵 **Stay 1-2m above the reef**, aiming for 1.5m. This keeps everything in focus.
 
 <Note>
   Everything farther than 31 cm (12 inches) will be sharp / in focus in GoPro.
 </Note>
 
-🔵 **Adjust your height based on the area**: swim closer (around 1 meter) for detailed photos of small or intricate corals, or when the visibility is bad, but be careful -- getting too close can create gaps on the sides. Swim higher (around 2 meters) for large, simple areas like soft coral or sand where details matter less.
+🔵 **Adjust your height based on the area**: swim closer (around 1 metre) for detailed photos of small or intricate corals, or when the visibility is bad. Please note that getting too close to the substrate can create gaps on the sides. Swim higher (around 2 metres) for large, simple areas like soft coral or sand where details matter less.
 
 🔵 **Keep the cameras level** with the reef unless you're capturing the sides of large corals (see section [4. Large Colonies](#4-large-colonies).
 
@@ -208,17 +202,19 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 🔵 **Avoid capturing** your legs, fins, gear, or your buddy in the photos. These can confuse the 3D reconstruction algorithm.
 
+However, if you swiftly finish capturing photos from one site and move to an adjacent survey site without leaving the water, you can capture yourself or another diver to break up the two sets of images clearly.
+
 ![Positioning](/images/photogrammetry/positioning.jpg)
 
 ## 3. Swimming Pattern
 
+🔵 **Start and end outside the edges** by 1.5-2 metres to ensure full coverage.
+
 🔵 **Swim in a lawnmower pattern**: go back and forth across the area, like mowing a lawn, until you've covered the entire reef. You don't need to return to the starting point -- just finish once the whole area is photographed.
 
-🔵 **Start and end outside the edges** by 1.5-2 meters to ensure full coverage.
+🔵 **Keep each swim line** about 1.5m from the last one. This ensures photos overlap without too much duplication.
 
-🔵 **Keep each swim line** about 1.5 meters from the last one. This ensures photos overlap without too much duplication.
-
-🔵 **When turning**, swim a bit farther out (1.5-2 meters) beyond Transect to avoid gaps.
+🔵 **When turning**, swim a bit farther out (1.5-2m) beyond the Patch edge to avoid gaps.
 
 🔵 **Swim at a steady speed** (0.5-1.5 m/s), but slightly slow down when capturing detailed areas and speed up when covering simpler areas (totally optional).
 
@@ -233,7 +229,7 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 ## 4. Large Colonies
 
-🔵 **When you encounter a large coral or complex structure during your swim pattern**, swim over it as part of your regular back-and-forth lines, then pause briefly to swim in circles around it.
+🔵 **When you encounter a large coral or complex structure during your swim pattern**, swim over it as part of your regular back-and-forth lines, then pause briefly to swim in circles around it. It helps if you can mark where you start swimming around it, as this can inform you where you need to resume swimming when you have finished capturing the structure.
 
 🔵 **Tilt the cameras** towards the structure while circling to capture its sides.
 
@@ -268,7 +264,7 @@ Let's map the reef! This can be done by a second team of two people, or by the s
 
 # Upload
 
-Now it's time to turn your hard work into a 3D model! You can process the data yourself, or let us help. Simply navigate to [wildflow.ai/upload](https://wildflow.ai/upload) and follow the instructions. A typical 25x25m quadrat requires about 10-20GB of data, which usually takes around 30 minutes to upload (depends on your Internet connection). Once uploaded, processing takes a few hours, and soon you'll be able to explore your reef in stunning 3D detail right in your browser.
+Now it's time to turn your hard work into a 3D model! You can process the data yourself, or let us help. Simply navigate to [wildflow.ai/upload](https://wildflow.ai/upload) and follow the instructions. A typical 25x25m Patch requires about 10-20GB of data, which usually takes around 30 minutes to upload (depending on your Internet connection). Once uploaded, processing takes a few hours, and soon you'll be able to explore your reef in stunning 3D detail right in your browser.
 
 <Note>
   Watching your reef come to life in 3D is incredibly rewarding. You'll see
@@ -276,19 +272,26 @@ Now it's time to turn your hard work into a 3D model! You can process the data y
   wet!
 </Note>
 
-<video autoPlay muted loop playsInline className="w-full aspect-video" src="https://wildflow.ai/images/wildflowcoral.webm" />
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://wildflow.ai/images/wildflowcoral.webm"
+></video>
 
 # Tradeoffs
 
 Modern Structure-from-Motion (SfM) photogrammetry has been a game-changer for over a decade, and there are many ways to collect data. Our protocol is designed to balance simplicity, cost, and effectiveness, but it's worth understanding the tradeoffs involved:
 
-* **GoPro's Rolling Shutter**. GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimeter-level accuracy here, not millimeters. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
+- **GoPro's Rolling Shutter**. GoPros use a rolling shutter, meaning each row of pixels is captured at a slightly different time. This can cause slight distortions in fast-moving scenes, but for coral reef mapping, where movement is slow, it's rarely an issue. We're talking centimetre-level accuracy here, not millimetres. Thanks to [Will Greene](https://github.com/wogreene) for highlighting this!
 
-* **Two Cameras to Avoid the Bowl Effect**. Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire quadrat.
+- **Two Cameras to Avoid the Bowl Effect**. Using two cameras helps prevent the [bowl effect](https://www.google.com/search?q=bowl+effect+photogrammetry) -- a distortion that can occur when mapping large, flat areas with a single camera. The dual setup ensures your 3D model stays accurate over the entire Patch.
 
-* **Transects for Navigation**. For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
+- **Transects for Navigation**. For a 25x25m area, Transects help you stay on course and avoid gaps. If you're mapping a smaller area (like 10x10m), you might get away with a reciprocal zig-zag pattern, which is more forgiving in terms of coverage holes, but requires twice the swimming effort. We're also exploring alternative methods, like mid-water buoys, lasers, or real-time SLAM apps to ensure full coverage. Stay tuned for future protocols!
 
-* **No Triad Marker for Orientation**. Usually, people use a triad marker to define vertical direction, making it easy to align orthomosaics with a consistent normal vector. We skip that hassle and instead co-register 3D models using permanent common points-like stable rocks, not living coral that might grow -- ensuring everything stays self-consistent over time. For vertical alignment, we rely on the depth from Dive Computers on Scalebars, with about a 25cm error. That's probably fine for a 25x25m area, and the big win is we avoid lugging around that awkward triad-traveling with it is a nightmare, and building one is a pain!
+- **No Triad Marker for Orientation**. Usually, people use a triad marker to define vertical direction, making it easy to align orthomosaics with a consistent normal vector. We skip that hassle and instead co-register 3D models using permanent common points-like stable rocks, not living coral that might grow -- ensuring everything stays self-consistent over time. For vertical alignment, we rely on the depth from Dive Computers on Scalebars, with about a 25cm error. That's probably fine for a 25x25m area, and the big win is we avoid lugging around that awkward triad-traveling with it is a nightmare, and building one is a pain!
 
 <Note>
   Every choice in this protocol is about making reef mapping accessible and
